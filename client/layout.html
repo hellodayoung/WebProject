@@ -1,31 +1,22 @@
 <template name="layout">
-    <div>
-        <h1> 요리 레시피 </h1>
-        <h3>
-            <nav class="nav nav-pills">
-               <ul class="nav navbar-nav">
-                   <li role="presentation"><a  href="/tema1">국.찌개</a></li>
-                   <li role="presentation"><a  href="/tema2">밑반찬</a></li>
-                   <li role="presentation"><a  href="/tema3">메인요리</a></li>
-                   <li role="presentation"><a  href="/tema4">간식</a></li>
-                   <li role="presentation"><a  href="/tema5">간단한 한끼</a></li>
-               </ul>
-            </nav>
-        </h3>
+
+    <div style="height: 30px"></div>
+         <div class="container">
+             <h2 style="background-color: pink; color: white; text-align: center;">Take the good care of the my fridge!</h2>
+             <p></p>
+             <p style="color: gray"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span><strong> Tip :</strong> 원하시는 메뉴를 선택하세요!</p>
+             <p></p>
+        <ul class="nav nav-tabs">
+            <li><a style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'home'}}">홈</a></li>
+            <li><a style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'rice'}}">밥</a></li>
+            <li><a style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'study'}}">국 / 찌개</a></li>
+            <li><a style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'contact'}}">밑반찬</a></li>
+        </ul>
     </div>
-    <div>
-        {{> yield}}
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img src="cooktest.jpg" alt="">
-                <div class="caption">
-                    <h3>오늘의 추천</h3>
-                    <p> 추천 요리명 </p>
-                    <p><a href="#" class="btn btn-primary" role="button">조아용</a> <a href="#" class="btn btn-default" role="button">댓글</a></p>
-                    </div>
-            </div>
-        </div>
-    </div>
+
+    {{> yield}}
+
+    <p></p>
+    <p style="text-align: center">copyright 2016 dayoung kim & yoseb kim colaboration all right reserved.</p>
+
 </template>
