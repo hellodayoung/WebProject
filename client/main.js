@@ -1,0 +1,11 @@
+if(Meteor.isClient){
+  Router.configure({
+    layoutTemplate:'layout'
+  });
+  Router.route("/",{template:'home'});
+  Router.route("/tema1",{template:'tema1'});
+  Router.route("/tema2",{template:'tema2'});
+  Router.route("/tema3",{template:'tema3'});
+  Router.route("/tema4",{template:'tema4'});
+  Router.route("/tema5",{template:'tema5'});
+}
