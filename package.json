@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "hello",
+=======
+  "name": "weptest",
+>>>>>>> refs/remotes/hellodayoung/master
   "private": true,
   "scripts": {
     "start": "meteor run"
